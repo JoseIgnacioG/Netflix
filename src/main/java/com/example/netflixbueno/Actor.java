@@ -5,20 +5,22 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Valid
-@Table(name= "director")
-public class Director {
+//@Valid
+@Table(name= "actor")
+public class Actor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @NotNull(message = "Id cannot be null")
+    //@NotNull(message = "Id cannot be null")
     private int id;
+
     private String name;
 
-    public Director() {
+    public Actor(){
+
     }
 
-    public Director(Integer id, String name) {
+    public Actor(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
