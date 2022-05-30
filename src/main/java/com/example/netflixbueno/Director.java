@@ -13,6 +13,8 @@ public class Director {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull(message = "Id cannot be null")
     private int id;
+
+    @NotNull(message = "name cannot be null")
     private String name;
 
     public Director() {
